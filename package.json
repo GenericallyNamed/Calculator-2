@@ -1,0 +1,11 @@
+{
+  "name": "calculator2",
+  "version": "1.0.0",
+  "description": "a simple calculator to replace the Windows 10 calculator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Alex Shandilis",
+  "license": "ISC"
+}
