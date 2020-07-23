@@ -36,7 +36,7 @@ function updateOutput() {
         var finalResult = eval(inputReceived);
         console.log("the result is:" + eval(inputReceived));
         if (finalResult === undefined || finalResult === null) {
-            outputField.innerText = "error! stupid ass";
+            outputField.innerText = "result is either undefined or null! bad!";
             outputField.classList.add("errorText");
         }
         else {
@@ -46,7 +46,7 @@ function updateOutput() {
         
     }
     catch(error) {
-        outputField.innerText = "oh fuck! fuck. FUCK!";
+        outputField.innerText = "error! i'm sad ):";
         outputField.classList.add("errorText");
     }
 }
@@ -81,7 +81,7 @@ function solve() {
         
     }
     catch(error) {
-        outputField.innerText = "oh fuck! fuck. FUCK!";
+        outputField.innerText = "wat am i to do w/ this? dum dum";
         outputField.classList.add("errorText");
     }
 
@@ -108,8 +108,8 @@ function ripple(c, rgb) {
     console.log(x + " " + y);
     var rippleObject = document.createElement("DIV");
     $(c).append(rippleObject);
-    rippleObject.style.left = 'calc(' + x + 'px - 12.5px)';
-    rippleObject.style.top = 'calc(' + y + 'px - 12.5px)';
+    rippleObject.style.left = `calc(${x}px - 12.5px)`;
+    rippleObject.style.top = `calc(${y}px - 12.5px)`;
     rippleObject.style.backgroundColor = rgb;
     rippleObject.style.zIndex = 1;
     rippleObject.classList.add("rippleEffect");
@@ -139,8 +139,10 @@ for (var i = 0; i < rippleBtns.length; i++) {
     let rippleColor =  currentElement.getAttribute('rippleColor');
     console.log("Creating ripple button. ripple color = " + rippleColor + " and ID name = " + btnNameID);
     currentElement.addEventListener('mousedown', ripple, btnNameID, rippleColor);
+    console.log(currentElement.id + " is the element! adding click event listener!!");
     rippleBtns[i].addEventListener('mousedown', function() {
         ripple(btnNameID, rippleColor);
+        console.log("lol a click happened!");
     });
 }
 

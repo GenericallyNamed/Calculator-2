@@ -1,0 +1,45 @@
+@keyframes outputUpdate {
+    from {color: white;}
+    to {color: rgb(199,199,199);}
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(style/fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(style/fonts/Roboto-Medium.ttf);
+}
+
+.robotoMedium {
+    font-family: 'Roboto-Medium', sans-serif;
+    font-weight: 100;
+}
+
+.robotoBlack {
+    /*font-family: 'Roboto',  'Ubuntu', sans-serif;*/
+    font-family: 'Roboto-Black';
+    font-weight: 900;
+}
+
+.contentHeader {
+    font-size: 40pt;
+}
+
+.contentSubheader {
+    font-size: 20pt;
+}
+
+.colorSecondaryText {
+    color: rgb(199, 199, 199);
+    transition:0.2s;
+    animation: outputUpdate 1s ease-out;
+}
+
+.errorText {
+    color:rgb(192, 180, 180);
+    transition:0.2s;
+}
+

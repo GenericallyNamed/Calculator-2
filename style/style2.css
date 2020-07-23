@@ -1,0 +1,75 @@
+::selection {
+    background-color: rgb(252, 255, 93);
+    color:black;
+}
+
+
+#navBar {
+    background-color:rgb(46, 30, 54);
+    display: flex;
+    z-index: 1;
+}
+
+
+
+#navBarList {
+   width:100px;
+   height:450px; 
+}
+
+
+#calcApp-interfaceField {
+    height:100%;
+}
+
+.navBarBtn {
+    display:flex;
+    flex-direction: column;
+    height:80%;
+    width:80%;
+    background:none;
+    position:relative;
+    z-index:2;
+    overflow:hidden;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:100%;
+    vertical-align:middle;
+    text-align:center;
+}
+
+
+
+.navBar-listItem {
+    display:table-row;
+    place-items:center;
+}
+
+.sidebarBtn-container {
+    display:table-cell;
+    align-self:center;
+    vertical-align:middle;
+    height:100px;
+    width:100px;
+}
+
+.navBar-graphic {
+    margin:auto;
+}
+
+#calcApp-interfaceCell {
+    height:100%;
+}
+
+.inputTable-row {
+    height:100%;
+}
+
+#calculatorInput {
+    height:100%;
+}
+
+#historyPanel {
+    width:100px;
+    height:100%;
+}
